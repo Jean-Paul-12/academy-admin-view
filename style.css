@@ -1,7 +1,8 @@
 *{
   margin: 0%;
-  /*General*/
+  
 }
+/*General*/
 body{
   display: flex;
   flex-wrap:wrap ;
@@ -10,16 +11,20 @@ body{
 /* Style Menu User*/
 .menu_user{
   display: flex;
-  
+  flex-direction: column;
   background-color: #0E172A;
   width: 20%;
   height: 500px;
 }
 img.logo {
   width: 42px;
-  height: 33px;
   top: 13px;
   left: 23px;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 img.picture_profile{
   position: absolute;
@@ -48,12 +53,6 @@ img.picture_profile{
 
 
 /*Style Section*/
-
-
-
-
-
-
 .section{
   display: flex;
  background-color: #B3AFC7;
