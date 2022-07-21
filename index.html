@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image" href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" />
+  <link rel="icon" type="image"
+    href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" />
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin View</title>
 </head>
@@ -16,9 +19,7 @@
     <div class="icons"><img class="logo"
         src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
         alt="">
-      <span class="material-symbols-outlined">
-        account_circle
-      </span>
+      <span class="material-symbols-outlined">account_circle</span>
 
     </div>
 
@@ -27,30 +28,43 @@
       alt="">
     <p class="name">Happer Smith</p>
     <p class="email">hsmith@serempre.com</p>
-    <button class="button_1" ><span class="material-symbols-outlined">person</span>Usuarios</button>
-      <button class="button_2" ><span class="material-symbols-outlined">school</span>Cursos</button>
+    <p class="dash">DASHBOARDS</p>
+    <p class="tex">Lorem ipsum dolor sit amet, consectetur</p>
+    <button class="button_1"><span class="material-symbols-outlined">person</span>Usuarios</button>
+    <button class="button_2"><span class="material-symbols-outlined">school</span>Cursos</button>
   </div>
 
   <header class="information">
-    <span class="material-symbols-outlined">
-      menu
-    </span>
+    <span class="material-symbols-outlined">menu</span>
     <div class="icons_end">
-      <span class="material-symbols-outlined">
-        translate
-      </span>
-      <span class="material-symbols-outlined">
-        bookmark
-      </span>
-      <span class="material-symbols-outlined">
-        notifications
-      </span>
+      <span class="material-symbols-outlined">translate</span>
+      <span class="material-symbols-outlined">bookmark</span>
+      <span class="material-symbols-outlined">notifications</span>
     </div>
   </header>
 
   <div class="add_user">
     <p class="text">Agregar Usuarios</p>
-    <div class="card"></div>
+    <div class="register">
+      <h3 class="datos">Datos de acceso</h3>
+      <p class="username">Username<input type="text" cols="90" name="name" placeholder="Username"></p>
+      <p class="password">Password<input type="password" name="password" placeholder="*********************"></p>
+      <p class="password_confirmation">Password confirmation <input type="password_confirmation" name="password"
+          placeholder="*********************"></p>
+    </div>
+    
+    <div class="roles">
+      <h3>Rol</h3>
+      <section class="card_1">
+        <p class="lider">Lider</p>
+      </section>
+      <section class="card_2">
+        <p class="profesor">Profesor</p>
+      </section>
+      <section class="card_3">
+        <p class="estudiante">Estudiante</p>
+      </section>
+    </div>
   </div>
 
   <script src="./main.js" type="module"></script>
