@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Style Menu User*/
+/*Style Menu User*/
 .menu_user {
   display: flex;
   position: relative;
@@ -259,62 +259,51 @@ p.tex {
   border-radius: 6px;
   width: 330px;
 }
+/* Modules */
 
-.card_1 {
-  box-sizing: border-box;
+/* CARD */
+.card{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 16px;
-  position: relative;
-  width: 189px;
-  height: 210px;
-  left: 75px;
-  top: 90px;
-  background: #FFFFFF;
-  border: 1px solid #FFC107;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  flex-direction: row;
+  justify-content: start;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-width: 1px;
   border-radius: 8px;
+  border-color: #000000;
+  padding: 8px;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Inter';
+  font-style: normal;
+  line-height: 17px;
 }
 
-.card_2 {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 16px;
-  position: relative;
-  width: 189px;
-  height: 210px;
-  left: 345px;
-  top: 90px;
-  text-decoration: #4CB7F6;
-  background: #FFFFFF;
-  border: 1px solid #4CB7F6;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+.card--leader{
+  border-color: #FFC107;
+}
+.card--leader h3{
+  background-color: #FFC107;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
+.card--teacher{
+  border-color: #4CB7F6;
+}
+.card--teacher h3{
+  background-color: #4CB7F6;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
 
-.card_3 {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 16px;
-  position: relative;
-  width: 189px;
-  height: 210px;
-  left: 610px;
-  top: 90px;
-  background: #FFFFFF;
-  border: 1px solid #2DD4BF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+.card--student{
+  border-color: #2DD4BF;
+}
+.card--student h3{
+  background-color: #2DD4BF;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
