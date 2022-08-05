@@ -13,57 +13,97 @@
 </head>
 
 <body>
-  <main class="container"> <!--Block-->
+  <main class="container">
+    <!--Block-->
 
-    <div class="menu__user"> <!--Block-->
-      
-        <img class="menu__img" src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" alt="">
-        <a href=""><i class="fa-solid fa-user-astronaut fa-lg"></i></a>
-      
+    <div class="menu__user">
+      <!--Block-->
 
-      <img class="picture_profile"
+      <img class="menu__logo"
+        src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
+        alt="">
+      <a href="" class="menu__icon"><i class=" fa-solid fa-user-astronaut fa-lg"></i></a>
+
+
+      <img class="menu__profile"
         src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1"
         alt="">
-      <p class="name">Happer Smith</p>
-      <p class="email">hsmith@serempre.com</p>
-      <p class="dash">DASHBOARDS</p>
-      <p class="tex">Lorem ipsum dolor sit amet, consectetur</p>
+      <p class="menu menu--name">Iris Reyes</p>
+      <p class="menu menu--email">ireyes@serempre.com</p>
+      <p class="menu menu--dash">DASHBOARDS</p>
+      <p class="menu menu--text">Lorem ipsum dolor sit amet, consectetur</p>
+      <a href="" class="button button--users">
+        <i class="button__icon fa-regular fa-user"></i>
+        <span class="button__text">Usuarios</span>
+      </a>
+      <a href="" class="button button--curses">
+        <i class="fa-light fa-laptop-code"></i>
+        <span class="button__text">Cursos</span>
+      </a>
     </div>
 
-    <header class="navbar"> <!--Block-->
+    <header class="navbar"><!--Block-->
       <div class="navbar__start">
-        <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+        <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
       </div>
       <div class="navbar__end">
-        <a href="#"><i class="fa-solid fa-language fa-lg"></i></a>
-        <a href="#"><i class="fa-regular fa-bookmark fa-lg"></i></a>
-        <a href="#"><i class="fa-regular fa-bell fa-shake fa-lg"></i></a>
+        <a href=""><i class="fa-solid fa-language fa-lg"></i></a>
+        <a href=""><i class="fa-regular fa-bookmark fa-lg"></i></a>
+        <a href=""><i class="fa-regular fa-bell fa-shake fa-lg"></i></a>
       </div>
 
     </header>
 
-    <div class="card__main"> <!--Block-->
-      <p class="text">Agregar Usuarios</p>
-      <div class="register">
-        <h3 class="datos">Datos de acceso</h3>
-        <p class="username">Username<input type="text" cols="90" name="name" placeholder="Username"></p>
-        <p class="password">Password<input type="password" name="password" placeholder="*********************"></p>
-        <p class="password_confirmation">Password confirmation <input type="password_confirmation" name="password"
-            placeholder="*********************"></p>
+    <div class="card__main"><!--Block-->
+      
+      <p class="card__add">Agregar Usuarios</p>
+      <div class="card_register">
+        <h3 class="card__data">Datos de acceso</h3>
+        <p class="card__username">Username<input type="text" cols="90" name="name" placeholder="Username"></p>
+        <p class="card__password">Password<input type="password" name="password" placeholder="*********************"></p>
+        <p class="password_confirmation">Password confirmation <input type="password_confirmation" name="password" placeholder="*********************"></p>
       </div>
-
+      <hr>
       <div class="card__list">
-        <h2>Rol</h2>
+        <h2 class="card__rol">Rol</h2>
         <section class="card card--leader">
           <h3>Lider</h3>
+          <span class="card card--description">
+            <p>Puede ver, modificar, agregar o eliminar</p>
+            <ul>
+              <li>Log entry</li>
+              <li>Roles</li>
+              <li>Usuarios</li>
+            </ul>
+            
+          </span>
         </section>
         <section class="card card--teacher">
           <h3>Profesor</h3>
+          <span class="card card--description">
+            <p>Puede ver, modificar, agregar o eliminar</p>
+            <ul>
+              <li>Log entry</li>
+              <li>Roles</li>
+              <li>Usuarios</li>
+            </ul>
+          </span>
         </section>
         <section class="card card--student">
           <h3>Estudiante</h3>
+          <span class="card card--description">
+            <p>Puede ver, modificar, agregar o eliminar</p>
+            <ul>
+              <li>Log entry</li>
+              <li>Roles</li>
+              <li>Usuarios</li>
+            </ul>
+          </span>
         </section>
       </div>
+      <a href="" class="button button--save">
+        <span class="button__text">Guardar</span>
+      </a>
     </div>
 
   </main>
