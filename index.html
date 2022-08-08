@@ -13,36 +13,33 @@
 </head>
 
 <body>
+  <!--Block-->
   <main class="container">
+
     <!--Block-->
-
     <div class="menu__user">
-      <!--Block-->
 
-      <img class="menu__logo"
-        src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
-        alt="">
-      <a href="" class="menu__icon"><i class=" fa-solid fa-user-astronaut fa-lg"></i></a>
+      <img class="menu__logo" src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" alt="">
+      <a href="" class="menu__icon"><i class=" fa-solid fa-user-astronaut fa-lg fa-fade"></i></a>
 
-
-      <img class="menu__profile"
-        src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1"
-        alt="">
-      <p class="menu menu--name">Iris Reyes</p>
-      <p class="menu menu--email">ireyes@serempre.com</p>
-      <p class="menu menu--dash">DASHBOARDS</p>
-      <p class="menu menu--text">Lorem ipsum dolor sit amet, consectetur</p>
+      <img class="menu__profile" src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1" alt="">
+      <p class="menu--name">Iris Reyes</p>
+      <p class="menu--email">ireyes@serempre.com</p>
+      <p class="menu--dash">DASHBOARDS</p>
+      <p class="menu--text">Lorem ipsum dolor sit amet, consectetur</p>
       <a href="" class="button button--users">
         <i class="button__icon fa-regular fa-user"></i>
         <span class="button__text">Usuarios</span>
       </a>
       <a href="" class="button button--curses">
-        <i class="fa-light fa-laptop-code"></i>
+        <i class="fa-solid fa-code"></i>
         <span class="button__text">Cursos</span>
       </a>
     </div>
 
-    <header class="navbar"><!--Block-->
+    <!--Block-->
+    <header class="navbar">
+
       <div class="navbar__start">
         <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
       </div>
@@ -54,14 +51,25 @@
 
     </header>
 
-    <div class="card__main"><!--Block-->
-      
-      <p class="card__add">Agregar Usuarios</p>
-      <div class="card_register">
-        <h3 class="card__data">Datos de acceso</h3>
-        <p class="card__username">Username<input type="text" cols="90" name="name" placeholder="Username"></p>
-        <p class="card__password">Password<input type="password" name="password" placeholder="*********************"></p>
-        <p class="password_confirmation">Password confirmation <input type="password_confirmation" name="password" placeholder="*********************"></p>
+    <!--Block-->
+    <div class="box__main">
+
+      <h1 class="text__main">Agregar Usuarios</h1>
+
+      <div class="card__register">
+        <h2 class="data__access">Datos de acceso</h2>
+        <h4 class="data__user">Username</h4>
+        <section class="data data--user">
+          <i class="fa-solid fa-circle-user"><input class="data data--user--input" type="email" placeholder="Username"></i>
+        </section>
+        <h4 class="data__password">Password</h4>
+        <section class="data data--password">
+          <i class="fa-solid fa-key"><input type="password" placeholder="Password"></i>
+        </section>
+        <h4>Password Confirmation</h4>
+        <section class="data data--password--confirmation">
+          <i class="fa-solid fa-key"><input type="password" placeholder="Password Confirmation"></i>
+        </section>
       </div>
       <hr>
       <div class="card__list">
@@ -75,7 +83,7 @@
               <li>Roles</li>
               <li>Usuarios</li>
             </ul>
-            
+
           </span>
         </section>
         <section class="card card--teacher">
