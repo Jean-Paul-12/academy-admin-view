@@ -202,25 +202,26 @@ body {
   letter-spacing: -0.021em;
 }
 
-.card__register{
+.card__register {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
+  padding: 0px 40px;
+  
 }
 
 .data__access {
   color: #2D2D2D;
   position: relative;
-  bottom: 35px;
-  left: 30px;
+  bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.017em;
 }
-.data{ /* DATA GENERAL */
-  display: flex;
+
+.data { /* DATA GENERAL */
   flex-direction: column;
   justify-content: start;
   background-color: #FFFFFF;
@@ -229,20 +230,76 @@ body {
   border-width: 1px;
   border-radius: 6px;
   border-color: #DAE0E8;
-  padding: 12px 16px;
-  gap: 8px;
+  padding: 12px 25px;
+}
+
+.card__register i {
+  position: relative;
+  right: 10px;
+}
+
+.data input {
+  border-style: none;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.data__user {
+  position: relative;
+  color: #2D2D2D;
+  bottom: 15px;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
 }
 
 .data--user{
- 
+  position: relative;
+  bottom: 15px;
 }
 
-.data--user--input{
-  border-style: none;
-  background-color: #FFFFFF;
-  color: #FFFFFF;
+.data__password {
+  color: #2D2D2D;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+}
+.data--password{
+  width: 250px;
 }
 
+.data__password__confirmation{
+  position: relative;
+  color: #2D2D2D;
+  bottom: 83px;
+  left: 370px;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+}
+
+.data--password--confirmation{
+  position: relative;
+  width: 250px;
+  left: 370px;
+  bottom: 83px;
+}
+
+hr{
+  position: relative;
+  left: 40px;
+  width: 670px;
+  height: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E2E8F0;
+}
 /*CARD ROL*/
 
 .card__list {
@@ -250,7 +307,7 @@ body {
   position: relative;
   flex-direction: row;
   justify-content: center;
-  top: 270px;
+  top: 50px;
   right: 20px;
 }
 
@@ -260,7 +317,8 @@ body {
   bottom: 30px;
 }
 
-.card { /* CARD GENERAL */
+.card {
+  /* CARD GENERAL */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -328,7 +386,7 @@ body {
   display: flex;
   position: relative;
   border-radius: 40px;
-  top: 285px;
+  top: 55px;
   left: 600px;
   width: 65px;
   height: 25px;
