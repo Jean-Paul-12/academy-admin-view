@@ -187,7 +187,9 @@ body {
   bottom: 750px;
   left: 750px;
   background: #FFFFFF;
-  border: 1px solid #F1F5F9;
+  border-style: solid ;
+  border-width: 1px;
+  border-color: #F1F5F9;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
 }
@@ -242,6 +244,7 @@ body {
   border-style: none;
   background-color: #FFFFFF;
   color: #000000;
+height: 20px;
 }
 
 .data__user {
@@ -293,9 +296,9 @@ body {
 
 hr{
   position: relative;
+  bottom: 30px;
   left: 40px;
   width: 670px;
-  height: 0px;
   border-style: solid;
   border-width: 1px;
   border-color: #E2E8F0;
@@ -307,7 +310,7 @@ hr{
   position: relative;
   flex-direction: row;
   justify-content: center;
-  top: 50px;
+  top: 40px;
   right: 20px;
 }
 
@@ -386,7 +389,7 @@ hr{
   display: flex;
   position: relative;
   border-radius: 40px;
-  top: 55px;
+  top: 45px;
   left: 600px;
   width: 65px;
   height: 25px;
