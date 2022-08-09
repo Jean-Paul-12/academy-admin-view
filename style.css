@@ -263,6 +263,10 @@ height: 20px;
   bottom: 15px;
 }
 
+.data--user-input{
+  width: 600px;
+}
+
 .data__password {
   color: #2D2D2D;
   padding: 10px 0px;
@@ -275,10 +279,14 @@ height: 20px;
   width: 250px;
 }
 
+.data--password-input{
+  width: 220px;
+}
+
 .data__password__confirmation{
   position: relative;
   color: #2D2D2D;
-  bottom: 83px;
+  bottom: 87px;
   left: 370px;
   padding: 10px 0px;
   font-weight: 600;
@@ -291,7 +299,11 @@ height: 20px;
   position: relative;
   width: 250px;
   left: 370px;
-  bottom: 83px;
+  bottom: 87px;
+}
+
+.data--password--confirmation-input{
+  width: 220px;
 }
 
 hr{
@@ -310,7 +322,7 @@ hr{
   position: relative;
   flex-direction: row;
   justify-content: center;
-  top: 40px;
+  top: 20px;
   right: 20px;
 }
 
@@ -340,13 +352,37 @@ hr{
 }
 
 .card--description {
+  color: #2D2D2D;
   border-color: black;
   border-style: none;
   font-size: 13px;
   line-height: 17px;
   color: #2D2D2D;
   padding: 0px 10px;
-  margin: 18px 0px;
+  margin: 0px 0px;
+}
+
+.button__assign{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 70px;
+  width: 70px;
+  height: 23px;
+  margin: 10px 15px;
+  color: #4528D8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  border-radius: 6px;
+}
+
+.button__assign:hover {
+  background-color: #4528D8;
+  color: #FFFFFF;
+  transition: 1s all;
 }
 
 .card--leader {
@@ -355,10 +391,9 @@ hr{
 
 .card--leader h3 {
   background-color: #FFC107;
-  position: relative;
-  right: 50px;
+  width: 35px;
   padding: 2px 8px;
-  margin: 2px 64px;
+  margin: 5px 8px;
   border-radius: 4px;
 }
 
@@ -368,10 +403,10 @@ hr{
 
 .card--teacher h3 {
   background-color: #4CB7F6;
-  position: relative;
-  right: 25px;
-  padding: 2px 24px;
-  margin: 2px 38px;
+  color: #FFFFFF;
+  width: 60px;
+  padding: 2px 8px;
+  margin: 5px 8px;
   border-radius: 4px;
 }
 
@@ -381,7 +416,9 @@ hr{
 
 .card--student h3 {
   background-color: #2DD4BF;
+  width: 75px;
   padding: 2px 8px;
+  margin: 5px 8px;
   border-radius: 4px;
 }
 
@@ -389,7 +426,7 @@ hr{
   display: flex;
   position: relative;
   border-radius: 40px;
-  top: 45px;
+  top: 20px;
   left: 600px;
   width: 65px;
   height: 25px;
@@ -405,6 +442,6 @@ hr{
 }
 
 .button--save:hover {
-  background-color: #8370E5;
+  background-color: #0077ff;
   color: #FFFFFF;
 }
