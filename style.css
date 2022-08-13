@@ -431,15 +431,14 @@ hr{
   display: flex;
   position: relative;
   border-radius: 40px;
-  top: 20px;
-  left: 600px;
+  top: 3%;
+  left: 80%;
   width: 65px;
   height: 25px;
   background-color: #4528D8;
   color: #FFFFFF;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   padding: 12px 24px;
   font-weight: 500;
   font-size: 14px;
