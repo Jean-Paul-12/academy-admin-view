@@ -17,12 +17,12 @@
   <main class="container">
 
     <!--Block-->
-    <div class="menu__user">
+    <section class="sidebar">
 
       <img class="menu__logo"
         src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
         alt="">
-      <a href="" class="menu__icon"><i class=" fa-solid fa-user-astronaut fa-lg fa-fade"></i></a>
+      <a href="" class="menu__icon"><i class="fa-regular fa-circle-user fa-lg "></i></a>
 
       <img class="menu__profile"
         src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1"
@@ -30,93 +30,97 @@
       <p class="menu--name">Iris Reyes</p>
       <p class="menu--email">ireyes@serempre.com</p>
       <p class="menu--dash">DASHBOARDS</p>
-      <p class="menu--text">Lorem ipsum dolor sit amet, consectetur</p>
+      <p class="menu--text">Lorem ipsum dolor sit amet</p>
       <a href="" class="button button--users">
-        <i class="button__icon fa-regular fa-user"></i>
+        <i class="fa-regular fa-user lg"></i>
         <span class="button__text">Usuarios</span>
       </a>
       <a href="" class="button button--curses">
         <i class="fa-solid fa-code"></i>
         <span class="button__text">Cursos</span>
       </a>
-    </div>
+    </section>
 
     <!--Block-->
-    <header class="navbar">
-      <a class="navbar--start" href=""><i class=" fa-solid fa-bars fa-lg"></i></a>
-      <a class="navbar--end" href=""><i class="fa-solid fa-language fa-lg"></i></a>
-      <a class="navbar--end" href=""><i class="fa-regular fa-bookmark fa-lg"></i></a>
-      <a class="navbar--end" href=""><i class="fa-regular fa-bell fa-shake fa-lg"></i></a>
-    </header>
+    <article class="content__wrapper">
 
-    <!--Block-->
-    <div class="box__main">
+      <header class="navbar">
+        <a class="navbar--start" href=""><i class=" fa-solid fa-bars fa-lg"></i></a>
+        <nav>
+        <a class="navbar--end" href=""><i class="fa-solid fa-language fa-lg"></i></a>
+        <a class="navbar--end" href=""><i class="fa-regular fa-bookmark fa-lg"></i></a>
+        <a class="navbar--end" href=""><i class="fa-regular fa-bell  fa-lg"></i></a>
+      </nav>
+      </header>
+      <section class="conteiner">
+        <h1 class="text__main">Agregar Usuarios</h1>
+      <div class="box__main">
+        
+        <div class="card__register">
+          <h2 class="data__access">Datos de acceso</h2>
+          <form class="form__data">
+            <fieldset class="userWrapper" >
+              <h4 class="user__text">Username</h4>
+              <input class="user__input" type="email" placeholder="Username">
+            </fieldset>
+            <fieldset>
+              <h4 class="password__text">Password</h4>
+              <input class="password__input" type="password" placeholder="******************">
+            </fieldset>
+            <fieldset>
+              <h4 class="password__text">Password Confirmation</h4>
+              <input class="password__input" type="password" placeholder="******************">
+            </fieldset>
+          </form>
+        </div>
 
-      <h1 class="text__main">Agregar Usuarios</h1>
+        <hr>
 
-      <div class="card__register">
-        <h2 class="data__access">Datos de acceso</h2>
-        <h4 class="data__user">Username</h4>
-        <section class="data data--user">
-          <i class="fa-solid fa-circle-user"></i>
-          <input class="data--user-input" type="email" placeholder="Username or email">
-        </section>
-        <h4 class="data__password">Password</h4>
-        <section class="data data--password">
-          <i class="fa-solid fa-key"></i>
-          <input class="data--password-input" type="password" placeholder="Password">
-        </section>
-        <h4 class="data__password__confirmation">Password Confirmation</h4>
-        <section class="data data--password--confirmation">
-          <i class="fa-solid fa-key"></i>
-          <input class="data--password--confirmation-input" type="password" placeholder="Password Confirmation">
-        </section>
+        <div class="card__list">
+          <h2 class="card__rol">Rol</h2>
+          <section class="card card--leader">
+            <h3>Lider</h3>
+            <div class="card card--description">
+              <p>Puede ver, modificar, agregar o eliminar</p>
+              <ul>
+                <li>Log entry</li>
+                <li>Roles</li>
+                <li>Usuarios</li>
+              </ul>
+              <a href="" class="button__assign">Asignar</a>
+            </div>
+          </section>
+          <section class="card card--teacher">
+            <h3>Profesor</h3>
+            <div class="card card--description">
+              <p>Puede ver, modificar, agregar o eliminar</p>
+              <ul>
+                <li>Log entry</li>
+                <li>Roles</li>
+                <li>Usuarios</li>
+              </ul>
+              <a href="" class="button__assign">Asignar</a>
+            </div>
+          </section>
+          <section class="card card--student">
+            <h3>Estudiante</h3>
+            <div class="card card--description">
+              <p>Puede ver, modificar, agregar o eliminar</p>
+              <ul>
+                <li>Log entry</li>
+                <li>Roles</li>
+                <li>Usuarios</li>
+              </ul>
+              <a href="" class="button__assign">Asignar</a>
+            </div>
+          </section>
+
+        </div>
+        <a href="" class="button button--save">Guardar
+        </a>
       </div>
-      <hr>
-      <div class="card__list">
-        <h2 class="card__rol">Rol</h2>
-        <section class="card card--leader">
-          <h3>Lider</h3>
-          <span class="card card--description">
-            <p>Puede ver, modificar, agregar o eliminar</p>
-            <ul>
-              <li>Log entry</li>
-              <li>Roles</li>
-              <li>Usuarios</li>
-            </ul>
-            <a href="" class="button__assign">Asignar</a>
-          </span>
-        </section>
-        <section class="card card--teacher">
-          <h3>Profesor</h3>
-          <span class="card card--description">
-            <p>Puede ver, modificar, agregar o eliminar</p>
-            <ul>
-              <li>Log entry</li>
-              <li>Roles</li>
-              <li>Usuarios</li>
-            </ul>
-            <a href="" class="button__assign">Asignar</a>
-          </span>
-        </section>
-        <section class="card card--student">
-          <h3>Estudiante</h3>
-          <span class="card card--description">
-            <p>Puede ver, modificar, agregar o eliminar</p>
-            <ul>
-              <li>Log entry</li>
-              <li>Roles</li>
-              <li>Usuarios</li>
-            </ul>
-            <a href="" class="button__assign">Asignar</a>
-          </span>
-        </section>
-      </div>
-      <a href="" class="button button--save">
-        <span class="button__text">Guardar</span>
-      </a>
-    </div>
-
+    </section>
+    </article>
   </main>
 
   <script src="https://kit.fontawesome.com/6cd17e1f2f.js" crossorigin="anonymous"></script>

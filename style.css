@@ -1,34 +1,36 @@
-* {
-  margin: 0%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /*General*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: #E5E5E5;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex: 1;
+  background: #E2E8F0;
+  height: 100vh;
 }
 
 /* Menu user*/
-.menu__user {
+.sidebar {
   display: flex;
   position: relative;
   flex-direction: column;
   background-color: #0E172A;
-  width: 21%;
-  height: 937px;
-  order: 1;
+  width: 20%;
+  min-width: 280px;
 }
 
 .menu__logo {
   position: relative;
-  Width: 12%;
-  left: 13px;
+  Width: 13%;
+  left: 15px;
   top: 9px;
   Height: 45px;
 }
@@ -38,74 +40,78 @@ body {
   left: 87%;
   bottom: 20px;
   color: #94A3B8;
+  border-width: 2px;
 }
 
 .menu__profile {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  left: 38%;
-  top: 100px;
+  display: flex;
+  align-self: center;
+  width: 96px;
+  height: 96px;
+  margin-top: 100px;
   border-radius: 50%;
 }
 
 .menu--name {
-  position: relative;
-  width: 50%;
-  height: 20px;
-  left: 42%;
-  top: 13%;
-  color: #fff;
+  display: flex;
+  align-self: center;
   justify-content: center;
+  margin-top: 24px;
+  
+  width: 40%;
+  height: 20px;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
 }
 
 .menu--email {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
   color: #94A3B8;
-  width: 50%;
+  width: 40%;
   height: 20px;
-  left: 34%;
-  top: 13%;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
 }
 
 .menu--dash {
-  position: relative;
-  top: 230px;
-  color: #8370E5;
-  padding: 0px 50px;
   width: 88px;
   height: 17px;
+  margin-top: 60px;
+  margin-left: 30px;
   font-weight: 600;
   font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: #8370E5;
 }
 
 .menu--text {
-  position: relative;
-  top: 240px;
   color: #94A3B8;
-  padding: 0px 50px;
-  width: 225px;
+  width: 163px;
   height: 17px;
+  margin-left: 30px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
+  line-height: 17px;
 }
 
 .button {
-  display: inline-flex;
-  border-style: none;
+  display: flex;
   color: #94A3B8;
   background-color: #0E172A;
-  width: 220px;
-  height: 50px;
+  justify-content: center;
+  border-style: none;
+  width: 260px;
+  height: 44px;
   padding: 0px 60px;
   border-radius: 10px;
   text-decoration: none;
@@ -119,57 +125,62 @@ body {
   color: #FFFFFF;
 }
 
+
 .button--users {
-  position: relative;
-  justify-content: left;
-  top: 280px;
-  width: 73%;
-  padding: 0px 20px;
-  margin: 10px 25px;
-  gap: 38px;
+  justify-content:flex-start;
+  width: 70%;
+  padding: 0px 35px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 40px;
 }
 
 .button--curses {
-  position: relative;
-  justify-content: left;
-  top: 260px;
-  width: 73%;
-  padding: 0px 20px;
-  margin: 10px 25px;
+  justify-content:flex-start;
+  width: 70%;
+  padding: 0px 35px;
+  margin-left: 10px;
+  margin-right: 10px;
   gap: 35px;
 }
 
-/* Navbar */
+.content__wrapper {
+  width: 80%;
+}
 
 .navbar {
   display: flex;
-  position: relative;
-  background-color: #fff;
+  justify-content: space-between;
+  background-color: #FFFFFF;
   height: 65px;
-  width: 79%;
+  margin-bottom: 32px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-  order: 2;
 }
 
-.navbar--start  {
-  display: inline-table;
-  position: relative;
-  height: 65px;
-  width: 40px;
-  margin: 24px 30px;
+.navbar--start {
+  padding: 23px 30px;
   color: #64748B;
+  text-decoration: none;
 }
 
 .navbar--start:hover {
   color: #4CB7F6;
 }
 
-.navbar--end  {
-  display: inline-table;
+nav {
+  display: flex;
+}
+
+.navbar--end {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  margin: 24px 25px;
-  left: 80%;
+  align-items: center;
+  Height: 18px;
+  padding: 23px 35px;
   color: #64748B;
+  text-decoration: none;
 }
 
 .navbar--end:hover {
@@ -177,208 +188,202 @@ body {
 }
 
 /* CARD */
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
 
 .box__main {
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 690px;
-  bottom: 750px;
-  left: 40%;
+  width: 723px;
+  max-width: 723px;
   background: #FFFFFF;
-  border-style: solid ;
+  border-style: solid;
   border-width: 1px;
   border-color: #F1F5F9;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
-  order: 3;
+  padding: 39px 30px;
 }
 
 .text__main {
-  position: relative;
   color: #2D2D2D;
-  bottom: 60px;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: -0.021em;
+  width: 100%;
+  
+  margin-bottom: 32px;
+  margin-left: 16%;
 }
 
-.card__register {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 40px;
-  
-}
+
 
 .data__access {
   color: #2D2D2D;
-  position: relative;
-  bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.017em;
 }
 
-.data { /* DATA GENERAL */
+.user__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  color: #2D2D2D;
+  margin-bottom: 8px;
+}
+
+.form__data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.userWrapper {
+  width: 100%;
+  margin-bottom: 41px;
+}
+
+fieldset {
+  display: flex;
+  border: none;
+  width: 47%;
+
   flex-direction: column;
+}
+
+.form__data input {
   justify-content: start;
   background-color: #FFFFFF;
-  color: #000000;
+  color: #2D2D2D;
   border-style: solid;
   border-width: 1px;
   border-radius: 6px;
   border-color: #DAE0E8;
-  padding: 12px 25px;
+  padding: 12px 16px;
 }
 
-.card__register i {
-  position: relative;
-  right: 10px;
+
+.form__data .user__input {
+  background-image: url(/assets/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 44px;
 }
 
-.data input {
-  border-style: none;
-  background-color: #FFFFFF;
-  color: #000000;
-  height: 20px;
+.form__data input:focus-visible {
+  outline: 0;
 }
 
-.data__user {
-  position: relative;
-  color: #2D2D2D;
-  bottom: 15px;
-  padding: 10px 0px;
-  font-weight: 600;
+.user__input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.006em;
+  color: #B6BBC1;
 }
 
-.data--user{
-  position: relative;
-  bottom: 15px;
-  width: 91%;
-}
-
-.data--user-input{
-  width: 94%;
-}
-
-.data__password {
-  color: #2D2D2D;
-  padding: 10px 0px;
-  font-weight: 600;
+.password__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.006em;
-}
-.data--password{
-  width: 37%;
-}
-
-.data--password-input{
-  width: 86%;
-}
-
-.data__password__confirmation{
-  position: relative;
   color: #2D2D2D;
-  bottom: 87px;
-  left: 54%;
-  padding: 10px 0px;
-  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+.password__input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.006em;
+  color: #B6BBC1;
 }
 
-.data--password--confirmation{
-  position: relative;
-  width: 37%;
-  left: 54%;
-  bottom: 87px;
-}
-
-.data--password--confirmation-input{
-  width: 86%;
-}
-
-hr{
-  position: relative;
-  bottom: 30px;
-  left: 5%;
-  width: 88%;
+hr {
+  width: 100%;
+  height: 0px;
+  margin-top: 31px;
   border-style: solid;
   border-width: 1px;
   border-color: #E2E8F0;
 }
+
 /*CARD ROL*/
 
 .card__list {
   display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  top: 20px;
-  right: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card__rol {
-  position: relative;
-  left: 60px;
-  bottom: 30px;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 20px;
 }
 
+/* CARD GENERAL */
 .card {
-  /* CARD GENERAL */
-  display: flex;
   flex-direction: column;
-  justify-content: start;
-  width: 92%;
-  height: 75%;
+  width: 175px;
+  height: 190px;
   background-color: #FFFFFF;
   color: #000000;
   border-style: solid;
   border-width: 1px;
   border-radius: 8px;
   border-color: #000000;
-  padding: 8px;
-  margin: 20px;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
-  gap: 15px;
+  padding: 10px 10px;
 }
 
 .card--description {
   color: #2D2D2D;
   border-color: black;
   border-style: none;
-  font-size: 13px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 17px;
-  width: 90%;
+  width: 95%;
   height: 0%;
-  padding: 0px 10px;
-  margin: 0px 0px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 24px;
+  padding: 0px 0px;
 }
 
-.button__assign{
+.button__assign {
   display: flex;
-  position: relative;
   justify-content: center;
-  left: 40%;
-  width: 50%;
+  width: 40%;
   height: 23px;
-  margin: 10px 15px;
+  margin-top: 18px;
+  margin-left: 70px;
   color: #4528D8;
   text-decoration: none;
-  font-weight: 600;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.006em;
@@ -396,9 +401,16 @@ hr{
 
 .card--leader h3 {
   background-color: #FFC107;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
   width: 35px;
   padding: 2px 8px;
-  margin: 5px 8px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 24px;
   border-radius: 4px;
 }
 
@@ -411,8 +423,15 @@ hr{
   color: #FFFFFF;
   width: 60px;
   padding: 2px 8px;
-  margin: 5px 8px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 24px;
   border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .card--student {
@@ -421,27 +440,33 @@ hr{
 
 .card--student h3 {
   background-color: #2DD4BF;
+  color: #170D48;
   width: 75px;
   padding: 2px 8px;
-  margin: 5px 8px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  margin-left: 24px;
   border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .button--save {
-  display: flex;
-  position: relative;
   border-radius: 40px;
-  top: 3%;
-  left: 80%;
   width: 65px;
   height: 25px;
   background-color: #4528D8;
   color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
   padding: 12px 24px;
+  margin-top: 15px;
   font-weight: 500;
   font-size: 14px;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top: 30px;
   line-height: 20px;
 }
 
