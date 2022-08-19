@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <link rel="icon" type="image"
     href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" />
   <link rel="stylesheet"
@@ -13,44 +13,50 @@
 </head>
 
 <body>
-  <!--Block-->
+  <!-- Block -->
   <main class="container">
 
-    <!--Block-->
+    <!-- Block -->
     <section class="sidebar">
-
-      <img class="menu__logo"
-        src="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
-        alt="">
-      <a href="" class="menu__icon"><i class="fa-regular fa-circle-user fa-lg "></i></a>
-
-      <img class="menu__profile"
-        src="https://i0.wp.com/www.diarlu.com/wp-content/uploads/2019/09/rostro-mujer-adulta.jpg?resize=500%2C500&ssl=1"
-        alt="">
-      <p class="menu--name">Iris Reyes</p>
-      <p class="menu--email">ireyes@serempre.com</p>
-      <p class="menu--dash">DASHBOARDS</p>
-      <p class="menu--text">Lorem ipsum dolor sit amet</p>
-      <a href="" class="button button--users">
+      
+      <!-- Element -->
+      <div class="sidebar__header">
+        <img class="sidebar__logo" src="./assets/serempre-logomark-color (2).png" alt="">
+        <a href="" class="sidebar__icon"><i class="fa-regular fa-circle-user fa-lg "></i></a>  
+      </div>
+      
+      <img class="sidebar__avatar" src="./assets/rostro-mujer-adulta.webp" alt="">
+      <p class="sidebar__info">Iris Reyes</p>
+      <p class="sidebar__info sidebar__info--secondary">ireyes@serempre.com</p>
+      <p class="sidebar__text">DASHBOARDS</p>
+      <p class="sidebar__text sidebar__text--secondary">Lorem ipsum dolor sit amet</p>
+      <!-- Element -->
+      
+      <!-- Modifier -->
+      <a href="" class="sidebar__link">
         <i class="fa-regular fa-user lg"></i>
         <span class="button__text">Usuarios</span>
       </a>
-      <a href="" class="button button--curses">
+      <a href="" class="sidebar__link">
         <i class="fa-solid fa-code"></i>
         <span class="button__text">Cursos</span>
       </a>
+      <!-- Modifier -->
     </section>
+    <!-- Block -->
 
-    <!--Block-->
+    <!-- Block -->
     <article class="content__wrapper">
-
+      <!--Block-->
+      
       <header class="navbar">
-        <a class="navbar--start" href=""><i class=" fa-solid fa-bars fa-lg"></i></a>
+        <a class="navbar__start" href=""><i class=" fa-solid fa-bars fa-lg"></i></a>
         <nav>
-        <a class="navbar--end" href=""><i class="fa-solid fa-language fa-lg"></i></a>
-        <a class="navbar--end" href=""><i class="fa-regular fa-bookmark fa-lg"></i></a>
-        <a class="navbar--end" href=""><i class="fa-regular fa-bell  fa-lg"></i></a>
+        <a class="navbar__end" href=""><i class="fa-solid fa-language fa-lg"></i></a>
+        <a class="navbar__end" href=""><i class="fa-regular fa-bookmark fa-lg"></i></a>
+        <a class="navbar__end" href=""><i class="fa-regular fa-bell  fa-lg"></i></a>
       </nav>
+      <!--Block-->
       </header>
       <section class="conteiner">
         <h1 class="text__main">Agregar Usuarios</h1>
@@ -116,11 +122,11 @@
           </section>
 
         </div>
-        <a href="" class="button button--save">Guardar
-        </a>
+        <a href="" class="button button--save">Guardar</a>
       </div>
     </section>
     </article>
+    <!-- Block -->
   </main>
 
   <script src="https://kit.fontawesome.com/6cd17e1f2f.js" crossorigin="anonymous"></script>
