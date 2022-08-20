@@ -17,6 +17,8 @@ body {
   height: 100vh;
 }
 
+/* Sidebar */
+
 .sidebar {
   display: flex;
   position: relative;
@@ -27,7 +29,7 @@ body {
   padding:0px 7px
 }
 
-.sidebar__header{
+.sidebar__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +44,7 @@ body {
 .sidebar__icon {
   color: #94A3B8;
   padding-bottom: 7px;
+  padding-right: 15px;
 }
 
 .sidebar__avatar {
@@ -66,7 +69,7 @@ body {
   line-height: 20px;
 }
 
-.sidebar__info--secondary{
+.sidebar__info--secondary {
   color: #94A3B8;
   margin-top: 4px;
   font-weight: 400;
@@ -103,11 +106,16 @@ body {
   height: 44px;
   padding: 0px 23px;
   border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
   text-decoration: none;
   background-color: #0E172A;
   color: #94A3B8;
   transition: .3s ease all;
-  gap: 25px;
 }
 
 .sidebar__link:hover {
@@ -116,6 +124,20 @@ body {
   color: #FFFFFF;
 } 
 
+.sidebar__link--users {
+  margin-top: 20px;
+}
+
+.sidebar__link__text__users {
+  padding-left: 21px;
+}
+
+.sidebar__link__text__curses {
+  padding-left: 19px;
+}
+/* Sidebar */
+
+/* Contained */
 
 .content__wrapper {
   width: 80%;
@@ -159,15 +181,28 @@ nav {
   color: #4CB7F6;
 }
 
-/* CARD */
+/* Conteiner */
+
 .conteiner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
-.box__main {
+.card__text__main {
+  color: #2D2D2D;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.021em;
+  width: 100%;
+  margin-bottom: 32px;
+  margin-left: 16%;
+}
+
+/* Card Main */
+
+.card__main {
   width: 723px;
   max-width: 723px;
   background: #FFFFFF;
@@ -179,16 +214,7 @@ nav {
   padding: 39px 30px;
 }
 
-.text__main {
-  color: #2D2D2D;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.021em;
-  width: 100%;
-  margin-bottom: 32px;
-  margin-left: 16%;
-}
+
 
 
 
@@ -430,7 +456,7 @@ hr {
   line-height: 17px;
 }
 
-.button--save {
+.button__save {
   border-radius: 40px;
   width: 65px;
   height: 25px;
@@ -446,14 +472,17 @@ hr {
   line-height: 20px;
 }
 
-.button--save:hover {
+.button__save:hover {
   background-color: #0077ff;
   color: #FFFFFF;
 } 
+/* Conteiner */
+
+/* Contained */
 
 /* 
- * Blocks
- */
+* Blocks
+*/
 /* 
 
  /* Avatar */
