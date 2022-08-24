@@ -214,11 +214,7 @@ nav {
   padding: 39px 30px;
 }
 
-
-
-
-
-.data__access {
+.card__text__access {
   color: #2D2D2D;
   margin-bottom: 20px;
   font-weight: 700;
@@ -227,37 +223,13 @@ nav {
   letter-spacing: -0.017em;
 }
 
-.user__text {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  color: #2D2D2D;
-  margin-bottom: 8px;
-}
-
-.form__data {
+.card__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.userWrapper {
-  width: 100%;
-  margin-bottom: 41px;
-}
-
-fieldset {
-  display: flex;
-  border: none;
-  width: 47%;
-  flex-direction: column;
-}
-
-.form__data input {
-  justify-content: start;
+.card__form input {
   background-color: #FFFFFF;
   color: #2D2D2D;
   border-style: solid;
@@ -267,19 +239,41 @@ fieldset {
   padding: 12px 16px;
 }
 
-
-.form__data .user__input {
+.card__form .user__input {
   background-image: url(/assets/Icon-input.svg);
   background-repeat: no-repeat;
   background-position: 10px center;
   padding-left: 44px;
 }
 
-.form__data input:focus-visible {
+.card__form input:focus-visible {
   outline: 0;
 }
 
-.user__input::placeholder {
+fieldset {
+  display: flex;
+  border: none;
+  width: 47%;
+  flex-direction: column;
+}
+
+.card__user__wrapper {
+  width: 100%;
+  margin-bottom: 41px;
+}
+
+.card__user__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  color: #2D2D2D;
+  margin-bottom: 8px;
+}
+
+.card__user__input::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -289,7 +283,7 @@ fieldset {
   color: #B6BBC1;
 }
 
-.password__text {
+.card__password__text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -301,7 +295,7 @@ fieldset {
 }
 
 
-.password__input::placeholder {
+.card__password__input::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -320,21 +314,27 @@ hr {
   border-color: #E2E8F0;
 }
 
-/*CARD ROL*/
+/* Card */
 
-.card__list {
+.card__option__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.card__rol {
+.card__text__rol {
   width: 100%;
   margin-top: 22px;
   margin-bottom: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.017em;
+  color: #2D2D2D;
 }
 
-/* CARD GENERAL */
 .card {
   flex-direction: column;
   width: 175px;
@@ -349,6 +349,10 @@ hr {
   font-weight: 400;
   line-height: 17px;
   padding: 10px 10px;
+}
+
+ul{
+  padding: 0px 24px;
 }
 
 .card--description {
@@ -366,29 +370,6 @@ hr {
   margin-bottom: 18px;
   margin-left: 24px;
   padding: 0px 0px;
-}
-
-.button__assign {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  height: 23px;
-  margin-top: 18px;
-  margin-left: 70px;
-  color: #4528D8;
-  text-decoration: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.006em;
-  border-radius: 6px;
-}
-
-.button__assign:hover {
-  background-color: #4528D8;
-  color: #FFFFFF;
 }
 
 .card--leader {
@@ -455,8 +436,33 @@ hr {
   font-size: 12px;
   line-height: 17px;
 }
+.button__assign {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 23px;
+  margin-top: 18px;
+  margin-left: 70px;
+  color: #4528D8;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  border-radius: 6px;
+}
+
+.button__assign:hover {
+  background-color: #4528D8;
+  color: #FFFFFF;
+}
 
 .button__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 40px;
   width: 65px;
   height: 25px;
@@ -464,12 +470,15 @@ hr {
   color: #FFFFFF;
   padding: 12px 24px;
   margin-top: 15px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 20px;
   margin-right: 0px;
   margin-left: auto;
   margin-top: 30px;
-  line-height: 20px;
+  text-decoration: none;
 }
 
 .button__save:hover {
@@ -485,7 +494,7 @@ hr {
 */
 /* 
 
- /* Avatar */
+/* Avatar */
   /* .avatar {} */
   
 
